@@ -1,0 +1,12 @@
+<!-- Image and text -->
+
+  <div class="container">
+    <div class="category-list" >
+      <div  *ngFor="let item of categorys;" >
+        <a *ngIf="item.parent" style="display: none;width: 0px;"><mat-card class="category">{{item.parent.name}}</mat-card></a>
+        <div style="margin: 10%;">
+          <a *ngIf="!item.parent"  (click)="navigate(item._id)"><mat-card class="category">{{item.name}}</mat-card></a>
+        </div>
+      </div>
+    </div>
+  </div>

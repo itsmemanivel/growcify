@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="category-list" >
+      <div  *ngFor="let item of products;" >
+        <!-- <a *ngIf="item.parent" style="display: none;width: 0px;"><mat-card class="category">{{item.parent.name}}</mat-card></a> -->
+        <div *ngIf="item.name" style="margin: 10%;">
+          <a><mat-card class="category">{{item.name}}</mat-card></a>
+        </div>
+      </div>
+
+      <div *ngIf="noProducts" style="margin: 10%;">
+        <a><mat-card style=" width:100%;background-color:red;color:white">No Products Found!!!</mat-card></a>
+    </div>
+    </div>
+  </div>
