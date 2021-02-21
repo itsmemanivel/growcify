@@ -3,7 +3,12 @@
       <div  *ngFor="let item of products;" >
         <!-- <a *ngIf="item.parent" style="display: none;width: 0px;"><mat-card class="category">{{item.parent.name}}</mat-card></a> -->
         <div *ngIf="item.name" style="margin: 10%;">
-          <a><mat-card class="category">{{item.name}}</mat-card></a>
+          <a>
+            <mat-card  class="category">
+              <img mat-card-image src="https://www.tompetty.com/sites/g/files/g2000007521/f/Sample-image10-highres.jpg" height="80%" alt="Photo of a Shiba Inu">
+              <mat-card-title>{{item.name}}</mat-card-title>
+            </mat-card>
+          </a>
         </div>
       </div>
 

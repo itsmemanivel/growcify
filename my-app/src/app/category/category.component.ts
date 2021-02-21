@@ -17,8 +17,10 @@ export class CategoryComponent implements OnInit {
 
   ngOnInit(): void {
     this.api.getCategory().subscribe(data =>{
+      // for(var i=0; i<){
+
+      // }
       this.categorys = data;
-      console.log(this.categorys)
     })
   }
 
